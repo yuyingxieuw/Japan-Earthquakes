@@ -118,6 +118,18 @@ map.addLayer({
     }
 });
 
+ // Add border layer
+ map.addLayer({
+            'id': 'japan-borders',
+            'type': 'line',
+            'source': 'japan',
+            'paint': {
+                'line-color': '#000',
+                'line-width': 1,
+                'line-opacity': 0.8
+            }
+        });
+        
 });
 
 table = document.getElementsByTagName("table")[0];
